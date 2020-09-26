@@ -1,0 +1,12 @@
+{
+    "name": "caspar.brenneisen/portal-test",
+    "require": {
+        "guzzlehttp/guzzle": "^7.1"
+    },
+    "authors": [
+        {
+            "name": "Caspar Brenneisen",
+            "email": "caspar.brenneisen@fadendaten.ch"
+        }
+    ]
+}
