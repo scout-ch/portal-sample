@@ -4,21 +4,20 @@ require_once 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
 
+$config = include("config.php");
+
 $title = "Test";
 $content = "Test";
 
 $array = ["title" => ["de" => "Midata Meldet: "], "content" => ["de" => "Nein!"]];
 $json = json_encode($array);
 
-$apiKey = "35d28606-0be4-47f1-b0c8-37df82ea12d8";
-$baseURL = "https://pbsportal.itds-test.ch/api/v1/";
-
 $client = new Client();
-$res = $client->request('PUT', $baseURL . "message", [
+$res = $client->request('PUT', $config['baseURL'] . "message", [
     'headers' => [
         'Accept' => 'application/json',
         'Content-Type' => 'application/json',
-        'X-Tile-Authorization' => '35d28606-0be4-47f1-b0c8-37df82ea12d8'
+        'X-Tile-Authorization' => $config['apiKey']
     ],
     'body' => $json
 ]);
