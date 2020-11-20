@@ -9,7 +9,25 @@ $config = include("config.php");
 $title = "Test";
 $content = "Test";
 
-$array = ["title" => ["de" => "Midata Meldet: "], "content" => ["de" => "Nein!"]];
+$array = [
+    "limitToUserIds" => [
+      2
+    ],
+    "title" => [
+        "de" => "Midata Meldet: ",
+        "en" => "",
+        "fr" => "",
+        "it" => "",
+
+    ],
+    "content" => [
+        "de" => "Hallo!",
+        "en" => "",
+        "fr" => "",
+        "it" => "",
+    ]
+];
+
 $json = json_encode($array);
 
 $client = new Client();
