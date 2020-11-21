@@ -18,6 +18,10 @@ composer install
 ```
 
 ```
+cp config.dist.php config.php
+```
+
+```
 php -S localhost:8080 index.php
 ```
 [PHP Development Server - localhost:8080](http://localhost:8080)
