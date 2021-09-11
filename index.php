@@ -6,12 +6,10 @@ use GuzzleHttp\Client;
 
 $config = include 'config.php';
 
-$title = 'Test';
-$content = 'Test';
-
 $array = [
     // Tell the pbs-portal which users should see this notification.
     // Enter at least one user-id. You can load it from the OAuth-Connection.
+    // The ID 2 belongs to the user "hussein_kohlmann@hitobito.example.com"
     'limitToUserIds' => [
       2,
     ],
@@ -35,10 +33,10 @@ $array = [
     // You need to pass the URL in all four supported languages.
     // This attribute is optional.
     'url' => [
-        'de' => '',
-        'en' => 'Hello!',
-        'fr' => 'Bonjour!',
-        'it' => 'Ciao!',
+        'de' => 'https://pbs.puzzle.ch/de/groups/1/people/2.html',
+        'en' => 'https://pbs.puzzle.ch/en/groups/1/people/2.html',
+        'fr' => 'https://pbs.puzzle.ch/fr/groups/1/people/2.html',
+        'it' => 'https://pbs.puzzle.ch/it/groups/1/people/2.html',
     ],
 ];
 
