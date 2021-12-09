@@ -1,7 +1,7 @@
 {
     "name": "caspar.brenneisen/portal-test",
     "require": {
-        "guzzlehttp/guzzle": "^7.2",
+        "guzzlehttp/guzzle": "^7.4",
 	    "ext-json": "*"
 	},
     "authors": [
